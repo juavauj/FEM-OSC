@@ -21,7 +21,6 @@ body {
     background-size: cover;
     display: grid;
     justify-content: center;
-    text-align: center;
 
     @include breakpoint(large) {
         background-image: url("../../../images/pattern-background-desktop.svg");
