@@ -1,0 +1,28 @@
+@use '../util/' as *;
+
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-redhat);
+    background-image: url("../../../images/pattern-background-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    display: grid;
+    justify-content: center;
+
+    @include breakpoint(large) {
+        background-image: url("../../../images/pattern-background-desktop.svg");
+    }
+ }
